@@ -18,15 +18,6 @@ const config = {
 			},
 		},
 		extend: {
-			// gridTemplateAreas: {
-			// 	layout: ['sidebar nav nav', 'sidebar main main'],
-			// },
-			// gridTemplateColumns: {
-			// 	layout: '1fr 2fr',
-      // },
-      // gridTemplateRows: {
-      //   layout: '2rem  1fr'
-      // },
 			colors: {
 				dark: {
 					1: '#1C1F2E',
