@@ -1,6 +1,7 @@
 import React from 'react';
 import MobileNav from './MobileNav';
 import Logo from './Logo';
+import { SignedIn, UserButton } from '@clerk/nextjs';
 
 type NavbarProps = {};
 
@@ -10,8 +11,9 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
 			<Logo textStyles='text-[26px] font-extrabold text-white max-sm:hidden' />
 
 			<div className='flex-between gap-5'>
-				{/* TODO: CLERK USER MANAGEMENT */}
-
+				<SignedIn>
+					<UserButton />
+				</SignedIn>
 				<MobileNav />
 			</div>
 		</nav>
