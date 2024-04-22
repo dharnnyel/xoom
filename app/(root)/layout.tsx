@@ -1,10 +1,7 @@
 import React from 'react';
+import { LayoutProps } from '@/types';
 
-type RootLayoutProps = {
-	children: React.ReactNode;
-};
-
-const RootLayout: React.FC<RootLayoutProps> = ({
+const RootLayout: React.FC<LayoutProps> = ({
 	children,
 }) => {
   return <main>

@@ -1,11 +1,25 @@
-import React from 'react'
+import React from 'react';
+import { MeetingModalProps } from '@/types';
 
-type MeetingModalProps = {}
+import {
+	Dialog,
+	DialogContent,
+	DialogDescription,
+	DialogHeader,
+	DialogTitle,
+	DialogTrigger,
+} from '@/components/ui/dialog';
 
-const MeetingModal: React.FC<MeetingModalProps> = (props) => {
-  return (
-    <div>MeetingModal</div>
-  )
-}
+const MeetingModal: React.FC<MeetingModalProps> = ({
+	isOpen,
+	onClose,
+	title,
+	buttonText,
+	className,
+	handleClick,
+	children,
+}) => {
+	return <div>MeetingModal</div>;
+};
 
-export default MeetingModal
+export default MeetingModal;

@@ -1,11 +1,9 @@
-import { Navbar, Sidebar } from '@/components/index';
 import React from 'react';
 
-type HomeLayoutProps = {
-	children: React.ReactNode;
-};
+import { Navbar, Sidebar } from '@/components/index';
+import { LayoutProps } from '@/types';
 
-const HomeLayout: React.FC<HomeLayoutProps> = ({
+const HomeLayout: React.FC<LayoutProps> = ({
 	children,
 }) => {
 	return (

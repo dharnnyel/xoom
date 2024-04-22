@@ -1,14 +1,8 @@
-import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import React from 'react';
 
-type HomeCardProps = {
-	img: string;
-	title: string;
-	description: string;
-	handleClick: () => void;
-	className: string;
-};
+import { cn } from '@/lib/utils';
+import { HomeCardProps } from '@/types';
 
 const HomeCard: React.FC<HomeCardProps> = ({
 	img,

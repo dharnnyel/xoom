@@ -2,9 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
-type LogoProps = {
-  textStyles: string;
-};
+import { LogoProps } from '@/types';
 
 const Logo: React.FC<LogoProps> = ({textStyles}) => {
 	return (

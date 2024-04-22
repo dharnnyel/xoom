@@ -1,17 +1,18 @@
 'use client';
 
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
 import {
 	Sheet,
 	SheetClose,
 	SheetContent,
 	SheetTrigger,
 } from '@/components/ui/sheet';
-import { sidebarLinks } from '@/constants';
-import Image from 'next/image';
-import Link from 'next/link';
-import Logo from './Logo';
-import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
+import { sidebarLinks } from '@/constants';
+import Logo from './Logo';
 
 type MobileNavProps = {};
 
@@ -39,8 +40,7 @@ const MobileNav: React.FC<MobileNavProps> = props => {
 						<SheetClose asChild>
 							<section className='flex h-full flex-col gap-6 pt-16 text-white'>
 								{sidebarLinks.map(link => {
-									const isActive =
-										pathname === link.route;
+									const isActive = pathname === link.route;
 
 									return (
 										<SheetClose
