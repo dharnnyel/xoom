@@ -1,12 +1,15 @@
 import React from 'react';
 import { LayoutProps } from '@/types';
+import StreamVideoProvider from '@/providers/StreamClientProvider';
 
 const RootLayout: React.FC<LayoutProps> = ({
 	children,
 }) => {
-  return <main>
-    {children}
-  </main>;
+	return (
+		<main>
+			<StreamVideoProvider>{children}</StreamVideoProvider>
+		</main>
+	);
 };
 
 export default RootLayout;
