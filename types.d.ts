@@ -27,7 +27,7 @@ type MeetingModalProps = {
 };
 
 type meetingState =
-	| 'isScheduledMeeting'
+	| 'isScheduleMeeting'
 	| 'isJoiningMeeting'
 	| 'isInstantMeeting'
 	| undefined;
