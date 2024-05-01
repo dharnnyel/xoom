@@ -1,7 +1,17 @@
 import React from 'react';
 
 import { Navbar, Sidebar } from '@/components/index';
+import { Metadata } from 'next';
+
 import { LayoutProps } from '@/types';
+
+export const metadata: Metadata = {
+	title: 'XOOM',
+	description: 'Video calling platform',
+	icons: {
+		icon: '/icons/logo.svg',
+	},
+};
 
 const HomeLayout: React.FC<LayoutProps> = ({
 	children,
