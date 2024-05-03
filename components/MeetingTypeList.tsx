@@ -167,7 +167,7 @@ const MeetingTypeList: React.FC<
 					title='Meeting Created'
 					className='text-center'
 					handleClick={() => {
-						navigator.clipboard.writeText(meetingLink)
+						navigator.clipboard.writeText(meetingLink);
 						toast({ title: 'Link copied to clipboard' });
 					}}
 					image='/icons/checked.svg'
@@ -184,6 +184,17 @@ const MeetingTypeList: React.FC<
 				buttonText='Start Meeting'
 				handleClick={createMeeting}
 			/>
+
+			<MeetingModal
+				isOpen={meetingState === 'isJoiningMeeting'}
+				onClose={() => setMeetingState(undefined)}
+				title='Enter link here'
+				className='text-center'
+				buttonText='Join Meeting'
+				handleClick={() => router.push(values.link)}
+			>
+				
+			</MeetingModal>
 		</section>
 	);
 };

@@ -102,15 +102,15 @@ const CallList: React.FC<CallListProps> = ({ type }) => {
 						title={
 							(
 								meeting as Call
-							).state?.custom.description.substring(
+							).state?.custom?.description?.substring(
 								0,
 								23
 							) ||
-							(meeting as CallRecording).filename.substring(
+							(meeting as CallRecording)?.filename?.substring(
 								0,
 								20
 							) ||
-							'No description available'
+							'Personal Meeting'
 						}
 						date={
 							(
